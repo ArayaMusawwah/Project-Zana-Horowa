@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Work_Sans, Cardo } from "next/font/google"
 import "./(root)/globals.css"
 import { cn } from "@/lib/utils"
+import { ActiveProvider } from "@/context"
 
 const sans = Work_Sans({
   subsets: ["latin"],
@@ -27,12 +28,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("text-main-text font-cardo antialiased", [
+        className={cn("font-cardo text-main-text antialiased", [
           sans.variable,
           cardo.variable,
         ])}
       >
-        {children}
+        <ActiveProvider>{children}</ActiveProvider>
       </body>
     </html>
   )

@@ -27,6 +27,7 @@ const config = {
       colors: {
         main: {
           100: "#D9ABAB",
+          150: "#C17B7B",
           200: "#962071",
           text: "#f3f4f6",
           accent: "#FFEBD4",

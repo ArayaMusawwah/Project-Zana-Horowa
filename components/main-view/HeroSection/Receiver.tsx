@@ -2,8 +2,9 @@
 
 import { useSearchParams } from "next/navigation"
 import { FaRegEnvelopeOpen } from "react-icons/fa6"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
 import { baseVariants } from "@/components/shared/MotionElement"
+import { useActiveContext } from "@/context"
 
 const buttonVariants = {
   ...baseVariants,
@@ -15,6 +16,8 @@ const buttonVariants = {
 
 const Receiver = () => {
   const receiver = useSearchParams().get("to")
+
+  const { setIsActive } = useActiveContext()
 
   return (
     <div className="text-center">
@@ -28,13 +31,15 @@ const Receiver = () => {
       </motion.h3>
 
       <motion.button
-        className="bg-main-accent mx-auto mt-6 flex items-center rounded-md px-10 py-1 text-black"
+        className="mx-auto mt-6 flex items-center rounded-md bg-main-accent px-10 py-1 text-black"
         type="button"
         variants={buttonVariants}
         initial={"initial"}
         animate={"animate"}
-        whileTap={{ scale: 0.9 }}
+        exit={{ opacity: 0 }}
+        whileTap={{ scale: 0.96 }}
         whileHover={{ scale: 1.1 }}
+        onClick={() => setIsActive((prev) => !prev)}
       >
         <FaRegEnvelopeOpen />
         <span className="ml-2">Buka Undangan</span>
