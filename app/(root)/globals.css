@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Welfare";
+  src: url("/fonts/Wellfare Free.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Thorsa";
+  src: url("/fonts/Thorsa.otf") format("woff2");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .wrapper {
+    @apply flex min-h-svh;
+  }
+  .wrapper-center {
+    @apply flex min-h-svh flex-col items-center justify-center;
+  }
+}
