@@ -20,8 +20,8 @@ const HeroSection = () => {
   return (
     <MotionSection
       className={cn(
-        "wrapper-center absolute inset-0 z-10 overflow-hidden bg-main-100",
-        "max-h-svh",
+        "wrapper-center absolute inset-0 z-[9999] overflow-hidden bg-main-100",
+        "max-h-svh min-h-svh",
       )}
       initial={{ y: 0, opacity: 1 }}
       animate={

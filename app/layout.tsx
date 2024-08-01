@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Work_Sans, Cardo } from "next/font/google"
+import { Work_Sans, Cardo, Great_Vibes } from "next/font/google"
 import "./(root)/globals.css"
 import { cn } from "@/lib/utils"
 import { ActiveProvider } from "@/context"
@@ -13,6 +13,11 @@ const cardo = Cardo({
   subsets: ["latin"],
   variable: "--font-cardo",
   weight: ["400", "700"],
+})
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  variable: "--font-great-vibes",
+  weight: ["400"],
 })
 
 export const metadata: Metadata = {
@@ -31,6 +36,7 @@ export default function RootLayout({
         className={cn("font-cardo text-main-text antialiased", [
           sans.variable,
           cardo.variable,
+          greatVibes.variable,
         ])}
       >
         <ActiveProvider>{children}</ActiveProvider>

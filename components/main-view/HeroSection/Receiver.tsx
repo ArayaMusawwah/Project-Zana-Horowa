@@ -16,7 +16,6 @@ const buttonVariants = {
 
 const Receiver = () => {
   const receiver = useSearchParams().get("to")
-
   const { setIsActive } = useActiveContext()
 
   return (
@@ -26,8 +25,10 @@ const Receiver = () => {
         initial={"initial"}
         animate={"animate"}
       >
-        <p className="">Kepada Bpk/Ibu/Saudara/i YTH: </p>
-        <p className="text-2xl font-semibold capitalize">{receiver}</p>
+        <p className="">Kepada Bpk/Ibu/Saudara/i Yth: </p>
+        <p className="text-2xl font-semibold capitalize">
+          {receiver ?? "Tamu undangan"}
+        </p>
       </motion.h3>
 
       <motion.button

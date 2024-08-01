@@ -1,2 +1,2 @@
-import AboutSection from "./AboutSection"
-export default AboutSection
+import TheAbout from "./TheAbout"
+export default TheAbout

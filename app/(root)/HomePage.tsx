@@ -1,17 +1,16 @@
-import AboutSection from "@/components/main-view/AboutSection"
-import HeroSection from "@/components/main-view/HeroSection"
+import TheAbout from "@/components/main-view/AboutSection"
+import TheGallery from "@/components/main-view/GallerySection"
+import TheHero from "@/components/main-view/HeroSection"
+import ThePreface from "@/components/main-view/PrefaceSection"
 import Container from "@/components/shared/Container"
 
 export default function Home() {
   return (
-    <div className="bg-main-100">
-      <Container>
-        <HeroSection />
-        <AboutSection />
-        <AboutSection />
-        <AboutSection />
-        <AboutSection />
-      </Container>
-    </div>
+    <Container className={"text-serif bg-main-100"}>
+      <TheHero />
+      <TheAbout />
+      <ThePreface />
+      <TheGallery />
+    </Container>
   )
 }

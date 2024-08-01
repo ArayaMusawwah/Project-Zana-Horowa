@@ -17,18 +17,21 @@ const config = {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ["var(--font-sans)", "system-ui", "sans-serif"],
+      serif: ["var(--font-cardo)", "serif"],
+      wellfare: ["Welfare", "cursive"],
+      thorsa: ["Thorsa", "serif"],
+      greatVibes: ["var(--font-great-vibes)", "cursive"],
+    },
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        wellfare: ["Welfare", "cursive"],
-        thorsa: ["Thorsa", "serif"],
-        cardo: ["var(--font-cardo)", "serif"],
-      },
       colors: {
         main: {
           100: "#D9ABAB",
-          150: "#C17B7B",
+          110: "#C17B7B",
+          120: "#B14A4A",
           200: "#962071",
+          300: "#F7E7DC",
           text: "#f3f4f6",
           accent: "#FFEBD4",
         },

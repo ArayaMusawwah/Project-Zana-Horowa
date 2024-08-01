@@ -13,10 +13,11 @@
 @tailwind utilities;
 
 @layer base {
-  .wrapper {
-    @apply flex min-h-svh;
+  .sub-container {
+    @apply max-w-sm px-4 lg:max-w-2xl;
   }
+
   .wrapper-center {
-    @apply flex min-h-svh flex-col items-center justify-center;
+    @apply flex flex-col items-center justify-center;
   }
 }

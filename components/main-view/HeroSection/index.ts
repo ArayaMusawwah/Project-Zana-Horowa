@@ -1,3 +1,3 @@
-import HeroSection from "./HeroSection"
+import TheHero from "./TheHero"
 
-export default HeroSection
+export default TheHero
