@@ -18,7 +18,7 @@ export const DATA = {
     alamat:
       "Jl. Bukit Indah Blok B5 No. 6, RT 002/ RW 005, Kel. Serua, Kec. Ciputat, Kota Tangerang selatan, Banten 15414",
     maps: "https://maps.app.goo.gl/Lp7L8CwkehvC3GUp8",
-    tanggal: "02-AUG-2024 11:00:00 GMT+0700", //FORMAT: DD-MMM-YYYY HH:mm:ss GMT+0700
+    tanggal: "31-AUG-2024 11:00:00 GMT+0700", //FORMAT: DD-MMM-YYYY HH:mm:ss GMT+0700
     waktu: "09:00 - 17:00 WIB",
   },
 

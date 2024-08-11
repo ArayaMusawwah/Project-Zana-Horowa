@@ -1,21 +1,21 @@
 const WavesBottom = () => {
   return (
-    <div className="*:fill-main-110 absolute top-full w-screen *:absolute *:inset-x-0 *:top-0">
+    <div className="absolute top-full w-screen *:absolute *:inset-x-0 *:top-0 *:fill-main-110">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill-opacity="1"
+          fillOpacity="1"
           d="M0,224L60,202.7C120,181,240,139,360,138.7C480,139,600,181,720,181.3C840,181,960,139,1080,122.7C1200,107,1320,117,1380,122.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
       </svg>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill-opacity="0.4"
+          fillOpacity="0.4"
           d="M0,160L80,170.7C160,181,320,203,480,197.3C640,192,800,160,960,160C1120,160,1280,192,1360,208L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
         ></path>
       </svg>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
-          fill-opacity="0.4"
+          fillOpacity="0.4"
           d="M0,64L60,85.3C120,107,240,149,360,181.3C480,213,600,235,720,213.3C840,192,960,128,1080,106.7C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
         ></path>
       </svg>

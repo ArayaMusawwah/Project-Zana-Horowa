@@ -1,5 +1,10 @@
 import type { Metadata } from "next"
-import { Work_Sans, Cardo, Great_Vibes } from "next/font/google"
+import {
+  Work_Sans,
+  Cardo,
+  Great_Vibes,
+  Edu_VIC_WA_NT_Beginner,
+} from "next/font/google"
 import "./(root)/globals.css"
 import { cn } from "@/lib/utils"
 import { ActiveProvider } from "@/context"
@@ -20,6 +25,12 @@ const greatVibes = Great_Vibes({
   weight: ["400"],
 })
 
+const edu = Edu_VIC_WA_NT_Beginner({
+  subsets: ["latin"],
+  variable: "--font-edu",
+  weight: ["400", "500", "600", "700"],
+})
+
 export const metadata: Metadata = {
   title: "The Wedding Of Iqbal and Lisa",
   description: "Undangan Pernikahan Iqbal & Lisa",
@@ -37,6 +48,7 @@ export default function RootLayout({
           sans.variable,
           cardo.variable,
           greatVibes.variable,
+          edu.variable,
         ])}
       >
         <ActiveProvider>{children}</ActiveProvider>

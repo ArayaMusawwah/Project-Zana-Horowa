@@ -23,6 +23,7 @@ const config = {
       wellfare: ["Welfare", "cursive"],
       thorsa: ["Thorsa", "serif"],
       greatVibes: ["var(--font-great-vibes)", "cursive"],
+      edu: ["var(--font-edu)", "sans-serif"],
     },
     extend: {
       colors: {
@@ -49,6 +50,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        slideRight: "slideRight 0.3s ease-out",
       },
     },
   },

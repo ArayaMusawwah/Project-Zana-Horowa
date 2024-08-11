@@ -37,42 +37,33 @@ const itemVariant: Variants = {
   },
 }
 
-const Renderer = ({
-  days,
-  hours,
-  minutes,
-  seconds,
-  completed,
-}: rendererProps) => {
-  if (completed) {
-    return <h1>The Time Has Come!</h1>
-  } else {
-    return (
-      <MotionDiv
-        variants={parentVariant}
-        initial="initial"
-        whileInView={"whileInView"}
-        className="*:bg-main-120 relative z-10 mx-auto inline-flex space-x-2 font-serif text-white *:flex *:size-16 *:flex-col *:items-center *:justify-center *:-space-y-2 *:rounded-xl *:text-sm md:space-x-4 md:*:size-20 md:*:text-lg [&>div]:space-y-px"
-      >
-        <MotionDiv variants={itemVariant}>
-          <span>{days}</span>
-          <span className="block">Hari</span>
-        </MotionDiv>
-        <MotionDiv variants={itemVariant}>
-          <span>{hours}</span>
-          <span className="block">Jam</span>
-        </MotionDiv>
-        <MotionDiv variants={itemVariant}>
-          <span>{minutes}</span>
-          <span className="block">Menit</span>
-        </MotionDiv>
-        <MotionDiv variants={itemVariant}>
-          <span>{seconds}</span>
-          <span className="block">Detik</span>
-        </MotionDiv>
+const Renderer = ({ days, hours, minutes, seconds }: rendererProps) => {
+  return (
+    <MotionDiv
+      variants={parentVariant}
+      initial="initial"
+      whileInView={"whileInView"}
+      className="*:bg-main-120 relative z-10 mx-auto inline-flex space-x-2 font-serif text-white *:flex *:size-16 *:flex-col *:items-center *:justify-center *:-space-y-2 *:rounded-xl *:text-sm md:space-x-4 md:*:size-20 md:*:text-lg [&>div]:space-y-px"
+      viewport={{ once: true }}
+    >
+      <MotionDiv variants={itemVariant}>
+        <span>{days}</span>
+        <span className="block">Hari</span>
       </MotionDiv>
-    )
-  }
+      <MotionDiv variants={itemVariant}>
+        <span>{hours}</span>
+        <span className="block">Jam</span>
+      </MotionDiv>
+      <MotionDiv variants={itemVariant}>
+        <span>{minutes}</span>
+        <span className="block">Menit</span>
+      </MotionDiv>
+      <MotionDiv variants={itemVariant}>
+        <span>{seconds}</span>
+        <span className="block">Detik</span>
+      </MotionDiv>
+    </MotionDiv>
+  )
 }
 
 const CountdownContainer = () => {
@@ -83,14 +74,14 @@ const CountdownContainer = () => {
   }, [])
 
   return (
-    <MotionDiv className="mx-auto my-4 grid place-items-center">
+    <div className="mx-auto my-4 grid place-items-center">
       {isClient && (
         <Countdown
           date={Date.parse(DATA.resepsi.tanggal)}
           renderer={Renderer}
         />
       )}
-    </MotionDiv>
+    </div>
   )
 }
 export default CountdownContainer

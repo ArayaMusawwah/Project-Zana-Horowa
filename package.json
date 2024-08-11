@@ -10,18 +10,25 @@
   },
   "dependencies": {
     "@radix-ui/react-separator": "^1.1.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@react-hook/media-query": "^1.1.1",
+    "@react-hooks-library/core": "^0.6.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "embla-carousel-autoplay": "^8.1.8",
+    "embla-carousel-react": "^8.1.8",
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.417.0",
     "next": "14.2.5",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-countdown": "^2.3.5",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
+    "react-marques": "^0.0.1",
+    "swiper": "^11.1.9",
     "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "yet-another-react-lightbox": "^3.21.3"
   },
   "devDependencies": {
     "@types/node": "^20",

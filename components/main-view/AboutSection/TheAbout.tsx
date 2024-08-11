@@ -1,6 +1,6 @@
 "use client"
 
-import { cn, formatDate } from "@/lib/utils"
+import { formatDate } from "@/lib/utils"
 import MaskImage from "./MaskImage"
 import { DATA } from "@/data"
 import CountdownContainer from "./CountdownContainer"
@@ -11,7 +11,6 @@ import {
   MotionSpan,
 } from "@/components/shared/MotionElement"
 import { useActiveContext } from "@/context"
-import WavesBottom from "../PrefaceSection/WavesBottom"
 
 const AboutSection = () => {
   const { isActive } = useActiveContext()
@@ -28,6 +27,7 @@ const AboutSection = () => {
             }
           : { y: -1000 }
       }
+      viewport={{ once: true }}
     >
       <div className="sub-container">
         <MaskImage />
@@ -47,6 +47,7 @@ const AboutSection = () => {
                   delay: 0.5,
                 },
               }}
+              viewport={{ once: true }}
               className="inline-block text-lg italic"
             >
               The Wedding Of
@@ -64,6 +65,7 @@ const AboutSection = () => {
                   delay: 0.5,
                 },
               }}
+              viewport={{ once: true }}
               className="font-greatVibes block text-6xl capitalize tracking-wide text-slate-950"
             >
               {DATA.mempelai.keduaMempelai}
@@ -84,6 +86,7 @@ const AboutSection = () => {
               delay: 0.5,
             },
           }}
+          viewport={{ once: true }}
           className="relative z-10 mx-auto mt-6"
         >
           <p className="text-center font-serif text-xl text-black">

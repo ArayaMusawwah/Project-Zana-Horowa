@@ -14,6 +14,7 @@ const MaskImage = () => {
         className="mx-auto grid h-[300px] w-full place-items-center"
         initial={{ opacity: 0, scale: 0 }}
         whileInView={{ opacity: 1, scale: 1, transition: { duration: 1.5 } }}
+        viewport={{ once: true }}
       >
         <Image
           src={"/images/photo-1.jpg"}
