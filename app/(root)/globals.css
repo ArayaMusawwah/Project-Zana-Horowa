@@ -73,3 +73,12 @@
     transform: translateX(-100%);
   }
 }
+
+@keyframes draw-line {
+  0% {
+    path-length: 0;
+  }
+  100% {
+    path-length: 1;
+  }
+}

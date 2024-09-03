@@ -4,7 +4,7 @@ const ThePreface = () => {
   return (
     <section className="wrapper-center relative bg-main-110 py-20 pb-0">
       <div className="sub-container">
-        <p className="text-pretty text-center font-edu text-sm font-semibold tracking-wide lg:text-2xl">
+        <p className="text-pretty text-center font-edu text-base font-semibold leading-6 tracking-wide lg:text-2xl">
           “ Dan Di Antara Tanda-Tanda (Kebesaran)-Nya Ialah Dia Menciptakan
           Pasangan-Pasangan Untukmu Dari Jenismu Sendiri, Agar Kamu Cenderung
           Dan Merasa Tenteram Kepadanya, Dan Dia Menjadikan Di Antaramu Rasa

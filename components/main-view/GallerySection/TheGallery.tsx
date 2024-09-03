@@ -16,7 +16,7 @@ const TheGallery = () => {
   return (
     <section className="pb-6">
       <div className="mt-6 overflow-hidden py-20 lg:mt-64">
-        <h1 className="mb-2 text-center font-wellfare text-6xl lg:mb-5 lg:text-9xl">
+        <h1 className="mb-3 text-center font-wellfare text-5xl lg:mb-5 lg:text-9xl">
           Our Gallery
         </h1>
         <Carousel images={images} />

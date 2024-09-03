@@ -36,6 +36,9 @@ const config = {
           text: "#f3f4f6",
           accent: "#FFEBD4",
         },
+        dark: {
+          text: "#3f3131",
+        },
       },
       keyframes: {
         "accordion-down": {
@@ -51,6 +54,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         slideRight: "slideRight 0.3s ease-out",
+        "draw-line": "draw-line 0.3s ease-out",
       },
     },
   },
