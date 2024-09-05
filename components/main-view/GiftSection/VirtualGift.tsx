@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { FaRegClipboard } from "react-icons/fa6"
 import { CopyToClipboard } from "react-copy-to-clipboard"
+import { useToast } from "@/hooks/use-toast"
 const VirtualGift = ({
   logo,
   norek,
@@ -10,6 +11,8 @@ const VirtualGift = ({
   norek: string
   atasNama: string
 }) => {
+  const { toast } = useToast()
+
   return (
     <div className="flex flex-col justify-center px-4">
       <div>
@@ -25,7 +28,10 @@ const VirtualGift = ({
         <p>No. Rekening: {norek}</p>
         <p>a/n: {atasNama}</p>
       </div>
-      <CopyToClipboard text={norek}>
+      <CopyToClipboard
+        text={norek}
+        onCopy={() => toast({ description: "Berhasil disalin!" })}
+      >
         <button
           className="mt-2 flex items-center justify-center gap-2 rounded-md bg-main-120 px-4 py-2 font-sans"
           type="button"

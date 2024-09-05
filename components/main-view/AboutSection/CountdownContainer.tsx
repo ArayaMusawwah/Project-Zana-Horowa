@@ -5,6 +5,7 @@ import Countdown from "react-countdown"
 import { DATA } from "@/data"
 import { MotionDiv } from "@/components/shared/MotionElement"
 import { Variants } from "framer-motion"
+import { Button } from "@/components/ui/button"
 
 interface rendererProps {
   days: number
@@ -81,6 +82,12 @@ const CountdownContainer = () => {
           renderer={Renderer}
         />
       )}
+      <Button
+        type="button"
+        className="relative z-10 mt-10 bg-main-120 font-sans"
+      >
+        <a href={DATA.calendarUrl}>Simpan Tanggal</a>
+      </Button>
     </div>
   )
 }

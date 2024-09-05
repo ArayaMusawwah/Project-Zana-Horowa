@@ -4,7 +4,7 @@ import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa6"
 
 const TheFooter = () => {
   return (
-    <footer className="w-full bg-gray-600 py-6 font-sans text-white">
+    <footer className="w-full bg-main-200 py-6 font-sans text-white">
       <div className="mx-auto grid w-full max-w-xs grid-cols-4">
         <div className="items-end justify-self-end">
           <Image src={"/images/logo.png"} alt="logo" width={35} height={35} />

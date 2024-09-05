@@ -5,15 +5,18 @@ import VirtualGift from "./VirtualGift"
 import { DATA } from "@/data"
 import { FaGift } from "react-icons/fa6"
 import CopyToClipboard from "react-copy-to-clipboard"
+import { useToast } from "@/hooks/use-toast"
 
 /*
  * TODO: toast
  */
 
 const TheGift = () => {
+  const { toast } = useToast()
+
   return (
     <section>
-      <div className="mt-6 px-[7%] pb-14 pt-20 lg:mt-48">
+      <div className="mt-6 px-[7%] py-20 lg:mt-48">
         <SectionHeader title="Hadiah" />
 
         <div className="mt-20 grid max-lg:grid-rows-3 lg:grid-cols-3">
@@ -23,8 +26,11 @@ const TheGift = () => {
             norek={DATA.kado.rekening[0].nomor}
           />
 
-          <div className="text-dark-text flex flex-col items-center px-4 text-center font-sans lg:text-lg">
-            <CopyToClipboard text={DATA.kado.alamat}>
+          <div className="flex flex-col items-center px-4 text-center font-sans text-dark-text lg:text-lg">
+            <CopyToClipboard
+              text={DATA.kado.alamat}
+              onCopy={() => toast({ description: "Berhasil disalin!" })}
+            >
               <button>
                 <FaGift className="text-8xl text-main-120" />
               </button>
