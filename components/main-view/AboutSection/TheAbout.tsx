@@ -4,7 +4,7 @@ import { formatDate } from "@/lib/utils"
 import MaskImage from "./MaskImage"
 import { DATA } from "@/data"
 import CountdownContainer from "./CountdownContainer"
-import Waves from "./Waves"
+import WavesTop from "../../shared/WavesTop"
 import {
   MotionDiv,
   MotionSection,
@@ -66,7 +66,7 @@ const AboutSection = () => {
                 },
               }}
               viewport={{ once: true }}
-              className="font-greatVibes block text-6xl capitalize tracking-wide text-slate-950"
+              className="block font-greatVibes text-6xl capitalize tracking-wide text-slate-950"
             >
               {DATA.mempelai.keduaMempelai}
             </MotionSpan>
@@ -96,7 +96,7 @@ const AboutSection = () => {
 
         <CountdownContainer />
       </div>
-      <Waves />
+      <WavesTop />
     </MotionSection>
   )
 }

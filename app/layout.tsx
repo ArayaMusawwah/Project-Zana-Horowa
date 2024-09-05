@@ -8,6 +8,7 @@ import {
 import "./(root)/globals.css"
 import { cn } from "@/lib/utils"
 import { ActiveProvider } from "@/context"
+import { Toaster } from "@/components/ui/toaster"
 
 const sans = Work_Sans({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({
         ])}
       >
         <ActiveProvider>{children}</ActiveProvider>
+        <Toaster />
       </body>
     </html>
   )

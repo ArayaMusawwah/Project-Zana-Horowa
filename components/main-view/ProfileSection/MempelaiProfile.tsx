@@ -4,7 +4,7 @@ import { DATA } from "@/data"
 
 const MempelaiProfile = () => {
   return (
-    <div className="mx-auto mt-10 grid items-center justify-center rounded-2xl bg-[#FFC6C6] px-20 py-20 max-lg:grid-rows-3 lg:max-w-6xl lg:grid-cols-3 lg:gap-6 lg:py-10">
+    <div className="bg-main-50 mx-auto mt-10 grid items-center justify-center rounded-2xl px-20 py-20 max-lg:grid-rows-3 lg:max-w-6xl lg:grid-cols-3 lg:gap-6 lg:py-10">
       <DetailMempelai
         image={"/images/pria.jpeg"}
         altImage={"mempelai_laki-laki"}

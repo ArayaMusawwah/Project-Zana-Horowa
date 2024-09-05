@@ -40,6 +40,8 @@ export const formatDate = (
   return { tanggalFormat, hari, tanggal, bulan, tahun }
 }
 
+export const fetcher = (url: string) => fetch(url).then((res) => res.json())
+
 export function handleError(error: Error): void {
   console.error("Error occurred:", error.message)
   throw new Error(error.message)

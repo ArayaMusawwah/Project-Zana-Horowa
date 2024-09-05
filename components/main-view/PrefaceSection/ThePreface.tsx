@@ -1,4 +1,4 @@
-import WavesBottom from "./WavesBottom"
+import WavesBottom from "../../shared/WavesBottom"
 
 const ThePreface = () => {
   return (

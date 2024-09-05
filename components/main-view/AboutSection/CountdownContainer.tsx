@@ -43,7 +43,7 @@ const Renderer = ({ days, hours, minutes, seconds }: rendererProps) => {
       variants={parentVariant}
       initial="initial"
       whileInView={"whileInView"}
-      className="*:bg-main-120 relative z-10 mx-auto inline-flex space-x-2 font-serif text-white *:flex *:size-16 *:flex-col *:items-center *:justify-center *:-space-y-2 *:rounded-xl *:text-sm md:space-x-4 md:*:size-20 md:*:text-lg [&>div]:space-y-px"
+      className="relative z-10 mx-auto inline-flex space-x-2 font-serif text-white *:flex *:size-16 *:flex-col *:items-center *:justify-center *:-space-y-2 *:rounded-xl *:bg-main-120 *:text-sm md:space-x-4 md:*:size-20 md:*:text-lg [&>div]:space-y-px"
       viewport={{ once: true }}
     >
       <MotionDiv variants={itemVariant}>
@@ -85,3 +85,8 @@ const CountdownContainer = () => {
   )
 }
 export default CountdownContainer
+
+/*
+ * TODO:
+ * - add google calendar
+ */

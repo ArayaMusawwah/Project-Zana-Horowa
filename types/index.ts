@@ -5,3 +5,11 @@ export interface IImage {
   alt: string
   className?: ClassValue
 }
+
+export interface IInvitation {
+  _id?: string
+  name: string
+  url: string
+  isCompleted: boolean
+  date?: Date
+}

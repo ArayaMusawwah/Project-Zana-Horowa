@@ -1,8 +1,8 @@
-export const DATA = {
+export const DATA: IData = {
   mempelai: {
     keduaMempelai: "Anies & Komari",
-    story:
-      "pagi ketemu, siang dilamar, malem dilamar, pagi dilamar, malam dilamar, paginya lagi ke undangan temen",
+    /* story:
+      "pagi ketemu, siang dilamar, malem dilamar, pagi dilamar, malam dilamar, paginya lagi ke undangan temen", */
     laki: {
       nama: "anies ban dalem",
       ortu: "Bapak Yanto Jagung Manis & Ibu Siti Bed Cover",
@@ -30,14 +30,88 @@ export const DATA = {
     penerima: "Muhammad Iqbal Ramadhan",
     nomer: "081286765654",
     alamat:
-      "Jl. Siliwangi No.2, Pamulang Bar., Kec. Pamulang, Kota Tangerang Selatan, Banten 15417",
+      "Jl. Bukit Indah Blok B.5 No.6, Serua, Ciputat, Kota Tangerang Selatan, Banten 15417",
     rekening: [
       {
         nomor: "39428347293",
-        gambar: "/mandiri.svg",
+        gambar: "/images/mandiri.svg",
         atasNama: "Muhammad Iqbal Ramadhan",
       },
-      { nomor: "829137", gambar: "/bsi.svg", atasNama: "Rosalia Tsuraya" },
+      {
+        nomor: "829137",
+        gambar: "/images/bsi.svg",
+        atasNama: "Rosalia Tsuraya",
+      },
     ],
   },
+  shortStory: {
+    firstYear: {
+      tahun: "2002: Awal Pertemuan di Embrio",
+      story:
+        "Reprehenderit ullamco cupidatat proident cillum aute reprehenderit ullamco velit officia consequat mollit dolor reprehenderit ex.",
+    },
+    secondYear: {
+      tahun: "2021 - 2022: Berkomitmen",
+      story:
+        "Esse veniam ullamco laboris exercitation duis laborum ut ullamco sit occaecat do excepteur commodo pariatur.",
+    },
+    thirdYear: {
+      tahun: "2023: Sebuah awal dari akhir",
+      story:
+        "Culpa pariatur sunt dolor minim incididunt commodo consequat officia ea mollit exercitation Lorem exercitation cupidatat.",
+    },
+    forthYear: {
+      tahun: "2025: Akhirnya berakhir",
+      story:
+        "Quis quis culpa nisi eiusmod incididunt laboris voluptate excepteur dolor nisi eu incididunt.",
+    },
+  },
+}
+
+export interface IOrangTua {
+  nama: string
+  ortu: string
+}
+
+export interface IResepsiAkad {
+  alamat: string
+  maps: string
+  tanggal: string // Format: DD-MMM-YYYY GMT+0700
+  waktu: string
+}
+
+export interface IRekening {
+  nomor: string
+  gambar: string
+  atasNama: string
+}
+
+export interface IKado {
+  penerima: string
+  nomer: string
+  alamat: string
+  rekening: IRekening[]
+}
+
+export interface IShortStory {
+  tahun: string
+  story: string
+}
+
+export interface IData {
+  mempelai: {
+    keduaMempelai: string
+    laki: IOrangTua
+    perempuan: IOrangTua
+    story?: string // Optional jika kadang di-comment
+  }
+  resepsi: IResepsiAkad
+  akad: IResepsiAkad
+  kado: IKado
+  shortStory: {
+    firstYear: IShortStory
+    secondYear: IShortStory
+    thirdYear: IShortStory
+    forthYear: IShortStory
+  }
 }

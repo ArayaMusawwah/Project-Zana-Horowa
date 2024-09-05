@@ -3,7 +3,7 @@ import Image from "next/image"
 const SectionHeader = ({ title }: { title: string }) => {
   return (
     <div className="relative">
-      <h1 className="text-center font-wellfare text-5xl lg:text-7xl">
+      <h1 className="text-center font-wellfare text-6xl lg:text-8xl">
         {title}
       </h1>
       <Image

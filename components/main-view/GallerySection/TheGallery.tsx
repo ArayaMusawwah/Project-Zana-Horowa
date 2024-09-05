@@ -17,7 +17,7 @@ const TheGallery = () => {
     <section className="pb-6">
       <div className="mt-6 overflow-hidden py-20 lg:mt-64">
         <h1 className="mb-3 text-center font-wellfare text-5xl lg:mb-5 lg:text-9xl">
-          Our Gallery
+          Galeri Kami
         </h1>
         <Carousel images={images} />
       </div>

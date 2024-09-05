@@ -1,4 +1,3 @@
-import Image from "next/image"
 import MempelaiProfile from "./MempelaiProfile"
 import SectionHeader from "@/components/shared/SectionHeader"
 
